@@ -15,3 +15,4 @@ for m in marks:
         failed += 1
 
 print(passed, failed)
+
