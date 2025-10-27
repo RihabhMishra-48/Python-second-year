@@ -1,0 +1,63 @@
+# A function is a block of the reusable code/statements that returns a specific task.
+# It executes the code whenever it is called.
+
+def hello_world():
+    print("Hello, World!")
+
+# Call the function
+hello_world()
+
+def hello_name(name):
+    print("Hello", name)
+
+# Call the function with an argument
+hello_name("Rishabh")
+
+# parameters are the variables listed inside the parentheses in the function Defenations.
+# Arguments are the values provided to the function when it is called.
+
+#Write a function to print square of a number
+
+def square(num):
+    return num * num
+
+print(square(5))
+
+#write a program to print square of all numbers from x to y.
+
+def print_square(x, y):
+    for num in range(x, y+1):
+        print(square(num))
+print_square(1, 10)
+
+#write a program to implement pythagorus usig function
+def pythagorus(base, perpendicular):
+    return (base ** 2) + (perpendicular ** 2)
+print(pythagorus(3, 4))
+
+
+
+
+
+
+#write a program to make calculator using functions
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b!= 0:
+        return a / b
+    else:
+        return "Error: Division by zero is not allowed."
+
+print(add(5, 3))
+print(subtract(5, 3))
+print(multiply(5, 3))
+print(divide(10, 2))
+print(divide(10, 0))
